@@ -1,0 +1,15 @@
+{
+    "presets": [
+      ["@babel/preset-env", {
+        "modules": false // 不使用commonjs
+      }],
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime",
+      ["@babel/plugin-proposal-class-properties",{ "loose": true }],
+      ["import", { 
+        "libraryName": "antd", "libraryDirectory": "es", "style": true 
+      }]
+    ]
+}
